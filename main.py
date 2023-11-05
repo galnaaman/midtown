@@ -1,3 +1,5 @@
+import os
+
 import streamlit as st
 import requests
 import logging
@@ -12,9 +14,10 @@ st.set_page_config(
     initial_sidebar_state="expanded", )
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.INFO)
 # Replace 'your_bot_token' and 'your_chat_id' with your actual values
-bot_token = '6671561034:AAE-I-eUsf81XsIBup_wVzpn7wbRecEMAnk'
-chat_id = '729712388'
 
+
+os.getenv('bot_token')
+os.getenv('chat_id')
 # Sample family members
 
 family_members = [
