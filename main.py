@@ -16,8 +16,8 @@ logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', datefmt=
 # Replace 'your_bot_token' and 'your_chat_id' with your actual values
 
 
-os.getenv('bot_token')
-os.getenv('chat_id')
+bot_token = os.getenv('bot_token')
+chat_id = os.getenv('chat_id')
 # Sample family members
 
 family_members = [
